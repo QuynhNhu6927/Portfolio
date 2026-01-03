@@ -11,11 +11,13 @@ export default function AboutMe() {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-bg text-white">
 
         <div className="flex-shrink-0 flex flex-col items-center md:items-start">
-          <div className="w-40 h-40 sm:w-40 sm:h-40 md:w-90 md:h-90 relative rounded-lg overflow-hidden border-2 border-primary">
-            <Image
+          <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-90 md:h-90 relative rounded-lg overflow-hidden border-2 border-primary">
+             <Image
               src="/images/avatar.jpg"
               alt="Avatar"
               fill
+              priority
+              sizes="(max-width: 640px) 240px, (max-width: 768px) 320px, 320px"
               className="object-cover"
             />
           </div>
@@ -33,9 +35,9 @@ export default function AboutMe() {
 
           <div className="flex flex-col gap-2">
             <div className="inline-flex items-center font-bold gap-2 bg-primary text-white px-4 py-2 rounded-lg max-w-max">
-  <FaGraduationCap className="text-white w-5 h-5" />
-  <span>FPT University - Software Engineering</span>
-</div>
+              <FaGraduationCap className="text-white w-5 h-5" />
+              <span>FPT University - Software Engineering</span>
+            </div>
 
 
             <div className="flex flex-col md:flex-row gap-2 md:gap-4 text-disable text-sm mt-2">

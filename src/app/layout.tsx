@@ -22,14 +22,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <TabProvider>
           <div className="flex flex-col min-h-screen">
             <Navbar />
-            <div className="flex-1 flex justify-center items-center">
+            {/* Content area */}
+            <main className="flex-1 flex justify-center items-center">
               {children}
-            </div>
-
+            </main>
           </div>
         </TabProvider>
       </body>
-
     </html>
   );
 }

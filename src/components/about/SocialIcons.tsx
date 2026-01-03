@@ -24,7 +24,7 @@ export default function SocialIcons() {
         .catch(() => {
           showToast({
             message: "Copy failed!",
-            bgColor: "var(--color-disable)", 
+            bgColor: "var(--color-disable)",
           });
         });
     }
@@ -32,7 +32,6 @@ export default function SocialIcons() {
 
   return (
     <div className="flex gap-3 mt-4 justify-center md:justify-start">
-      {/* Toaster mount */}
       <ToastContainer />
 
       {icons.map((icon) => (
@@ -45,14 +44,18 @@ export default function SocialIcons() {
             src={icon.src}
             alt={icon.alt}
             fill
+            sizes="24px"
             className="object-contain transition-opacity duration-200 group-hover:opacity-0"
           />
+
           <Image
             src={icon.hover}
             alt={icon.alt}
             fill
-            className="object-contain absolute top-0 left-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+            sizes="24px"
+            className="object-contain absolute inset-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
           />
+
           {icon.tooltip && (
             <span className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-primary text-white font-semibold text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               {icon.tooltip}
