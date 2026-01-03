@@ -1,0 +1,18 @@
+export const TechSkills = [
+  { name: "HTML", icon: "/images/techSkills/html.png" },
+  { name: "CSS", icon: "/images/techSkills/css.png" },
+  { name: "JavaScript", icon: "/images/techSkills/js.png" },
+  { name: "TypeScript", icon: "/images/techSkills/ts.png" },
+  { name: "Dart", icon: "/images/techSkills/dart.png" },
+  { name: "React", icon: "/images/techSkills/react.png" },
+  { name: "Next.js", icon: "/images/techSkills/next.png" },
+  { name: "MUI", icon: "/images/techSkills/mui.png" },
+  { name: "Tailwind CSS", icon: "/images/techSkills/tailwind.png" },
+  { name: "Flutter", icon: "/images/techSkills/flutter.png" },
+  { name: "MySQL", icon: "/images/techSkills/mysql.png" },
+  { name: "PostgreSQL", icon: "/images/techSkills/postgre.png" },
+  { name: "Firebase", icon: "/images/techSkills/firebase.png" },
+  { name: "Git", icon: "/images/techSkills/git.png" },
+  { name: "GitHub", icon: "/images/techSkills/git2.png" },
+  { name: "Postman", icon: "/images/techSkills/postman.png" },
+];

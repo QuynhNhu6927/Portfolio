@@ -20,7 +20,8 @@ export default function Navbar() {
   return (
     <nav className="w-full pt-4 md:pt-6 relative">
       <div className="mx-auto w-[95%] max-w-6xl relative">
-        <div className="flex items-center justify-between rounded-full bg-white pl-6 pr-2 md:pl-8 md:pr-3 lg:pl-12 lg:pr-3 py-2 md:py-3">
+        <div className="flex items-center justify-between rounded-full bg-white pl-4 pr-2  md:pl-6 md:pr-2 lg:pl-8 lg:pr-2 py-1.5 md:py-2">
+
 
           <button
             onClick={() => setOpen(!open)}
