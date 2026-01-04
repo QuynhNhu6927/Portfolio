@@ -43,7 +43,7 @@ export const projects: Project[] = [
     },
     {
         id: 2,
-        title: "Event Management System",
+        title: "SnapRoom – Interior Design & Marketplace Platform",
         description:
             "A marketplace where interior designers sell furniture and design concepts, allowing users to browse, purchase, and chat directly with designers.",
         image: "/images/projects/snaproom.png",
