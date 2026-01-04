@@ -5,20 +5,64 @@ import React from "react";
 import { showToast, ToastContainer } from "../general/CustomToast";
 
 const icons = [
-  { name: "GitHub", src: "/images/contactIcon/git.png", hover: "/images/contactIcon/git_hover.png", alt: "GitHub" },
-  { name: "Facebook", src: "/images/contactIcon/fb.png", hover: "/images/contactIcon/fb_hover.png", alt: "Facebook" },
-  { name: "LinkedIn", src: "/images/contactIcon/linked.png", hover: "/images/contactIcon/linked_hover.png", alt: "LinkedIn" },
-  { name: "Google", src: "/images/contactIcon/mail.png", hover: "/images/contactIcon/mail_hover.png", alt: "Google", tooltip: "nguyenquynhnhu612004@gmail.com" },
-  { name: "WhatsApp", src: "/images/contactIcon/phone.png", hover: "/images/contactIcon/phone_hover.png", alt: "WhatsApp", tooltip: "+84 58 656 4776" },
+  {
+    name: "GitHub",
+    src: "/images/contactIcon/git.png",
+    hover: "/images/contactIcon/git_hover.png",
+    alt: "GitHub",
+    link: "https://github.com/QuynhNhu6927",
+  },
+  {
+    name: "Facebook",
+    src: "/images/contactIcon/fb.png",
+    hover: "/images/contactIcon/fb_hover.png",
+    alt: "Facebook",
+    link: "https://www.facebook.com/nhu.nguyen.727480",
+  },
+  {
+    name: "LinkedIn",
+    src: "/images/contactIcon/linked.png",
+    hover: "/images/contactIcon/linked_hover.png",
+    alt: "LinkedIn",
+    link: "https://www.linkedin.com/in/nh%C6%B0-nguy%E1%BB%85n-ab80053a1/",
+  },
+  {
+    name: "Google",
+    src: "/images/contactIcon/mail.png",
+    hover: "/images/contactIcon/mail_hover.png",
+    alt: "Google",
+    tooltip: "nguyenquynhnhu612004@gmail.com",
+  },
+  {
+    name: "WhatsApp",
+    src: "/images/contactIcon/phone.png",
+    hover: "/images/contactIcon/phone_hover.png",
+    alt: "WhatsApp",
+    tooltip: "+84 58 656 4776",
+  },
 ];
 
 export default function SocialIcons() {
-  const handleClick = (iconName: string, tooltip?: string) => {
+  const handleClick = (
+    iconName: string,
+    tooltip?: string,
+    link?: string
+  ) => {
+    // Nếu có link → mở tab mới
+    if (link) {
+      window.open(link, "_blank");
+      return;
+    }
+
+    // Copy email / phone
     if ((iconName === "WhatsApp" || iconName === "Google") && tooltip) {
-      navigator.clipboard.writeText(tooltip)
+      navigator.clipboard
+        .writeText(tooltip)
         .then(() => {
           showToast({
-            message: `${iconName === "WhatsApp" ? "Phone number" : "Email"} copied!`,
+            message: `${
+              iconName === "WhatsApp" ? "Phone number" : "Email"
+            } copied!`,
           });
         })
         .catch(() => {
@@ -38,7 +82,9 @@ export default function SocialIcons() {
         <div
           key={icon.name}
           className="relative w-6 h-6 cursor-pointer group"
-          onClick={() => handleClick(icon.name, icon.tooltip)}
+          onClick={() =>
+            handleClick(icon.name, icon.tooltip, icon.link)
+          }
         >
           <Image
             src={icon.src}

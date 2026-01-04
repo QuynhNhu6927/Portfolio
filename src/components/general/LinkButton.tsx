@@ -32,7 +32,7 @@ export default function LinkButton({
       className={`
         flex items-center gap-2
         px-4 py-2
-        ${hasBg ? bgColor : ""}   // nếu hasBg=false thì bỏ class bg
+        ${hasBg ? bgColor : ""}  
         ${textColor}
         hover:opacity-90
         transition
