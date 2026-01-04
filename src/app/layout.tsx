@@ -11,7 +11,7 @@ const kodchasan = Kodchasan({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Nguyen Quynh Nhu's Portfolio",
   description: "Nguyen Quynh Nhu's portfolio",
 };
 

@@ -7,13 +7,13 @@ import SocialIcons from "./SocialIcons";
 
 export default function AboutMe() {
   return (
-    <div className="mx-auto w-[95%] max-w-6xl px-4">
+    <div className="mx-auto w-[95%] max-w-6xl px-4 py-8 sm:py-10">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-bg text-white">
 
         <div className="flex-shrink-0 flex flex-col items-center md:items-start">
           <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-90 md:h-90 relative rounded-lg overflow-hidden border-2 border-primary">
              <Image
-              src="/images/avatar.jpg"
+              src="/images/avatar_me.jpg"
               alt="Avatar"
               fill
               priority

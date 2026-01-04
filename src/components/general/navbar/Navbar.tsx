@@ -10,7 +10,7 @@ const navLinks = [
   { url: "#about", label: "About me" },
   { url: "#skills", label: "Skills" },
   { url: "#projects", label: "Projects" },
-  { url: "#experience", label: "Experience" },
+  // { url: "#experience", label: "Experience" },
 ];
 
 export default function Navbar() {
@@ -48,7 +48,7 @@ export default function Navbar() {
           </ul>
 
           <LinkButton
-            href="/cv.pdf"
+            href="/files/cv.pdf"
             text="My CV"
             icon={ArrowDownTrayIcon}
             iconPosition="right"

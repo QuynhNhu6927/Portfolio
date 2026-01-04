@@ -7,8 +7,8 @@ export default function TechSkill() {
   const lgRows = [
     TechSkills.slice(0, 5),
     TechSkills.slice(5, 10),
-    TechSkills.slice(10, 13),
-    TechSkills.slice(13, 16),
+    TechSkills.slice(10, 12),
+    TechSkills.slice(12, 14),
   ];
 
   return (

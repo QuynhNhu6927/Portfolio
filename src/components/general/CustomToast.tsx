@@ -6,11 +6,11 @@ import { FaCheck } from "react-icons/fa";
 
 interface ToastProps {
   message: string;
-  duration?: number;             // thời gian hiển thị (ms)
+  duration?: number;            
   position?: "top-center" | "top-left" | "top-right" | "bottom-center" | "bottom-left" | "bottom-right";
-  bgColor?: string;              // background color
-  textColor?: string;            // text color
-  icon?: React.ReactNode;        // icon hiển thị
+  bgColor?: string;              
+  textColor?: string;           
+  icon?: React.ReactNode;       
 }
 
 export const showToast = ({
