@@ -27,17 +27,17 @@ const icons = [
     link: "https://www.linkedin.com/in/nh%C6%B0-nguy%E1%BB%85n-ab80053a1/",
   },
   {
-    name: "Google",
+    name: "Gmail",
     src: "/images/contactIcon/mail.png",
     hover: "/images/contactIcon/mail_hover.png",
-    alt: "Google",
+    alt: "Gmail",
     tooltip: "nguyenquynhnhu612004@gmail.com",
   },
   {
-    name: "WhatsApp",
+    name: "PhoneNumber",
     src: "/images/contactIcon/phone.png",
     hover: "/images/contactIcon/phone_hover.png",
-    alt: "WhatsApp",
+    alt: "PhoneNumber",
     tooltip: "+84 58 656 4776",
   },
 ];
@@ -48,20 +48,18 @@ export default function SocialIcons() {
     tooltip?: string,
     link?: string
   ) => {
-    // Nếu có link → mở tab mới
     if (link) {
       window.open(link, "_blank");
       return;
     }
 
-    // Copy email / phone
-    if ((iconName === "WhatsApp" || iconName === "Google") && tooltip) {
+    if ((iconName === "PhoneNumber" || iconName === "Gmail") && tooltip) {
       navigator.clipboard
         .writeText(tooltip)
         .then(() => {
           showToast({
             message: `${
-              iconName === "WhatsApp" ? "Phone number" : "Email"
+              iconName === "PhoneNumber" ? "Phone number" : "Gmail"
             } copied!`,
           });
         })

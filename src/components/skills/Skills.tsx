@@ -9,10 +9,6 @@ export default function Skills() {
       <section className="w-full">
         <TechSkill />
       </section>
-
-      <section className="w-full">
-        <OthersSkill />
-      </section>
     </div>
   );
 }
