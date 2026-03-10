@@ -27,10 +27,10 @@ export default function AboutMe() {
 
         <div className="flex-1 text-center text-left mt-4 md:mt-0">
           <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-3 md:mb-4">
-            Hi, I’m Nguyễn Quỳnh Như, a front-end developer
+            Hi, I’m Nguyễn Quỳnh Như, a Software Developer & AI Research.
           </h1>
           <p className="text-disable mb-4 sm:mb-5 md:mb-6">
-            As a recent Software Engineering graduate, I am highly motivated to learn, grow, and contribute my skills to meaningful projects while gaining hands-on experience in a professional software development environment.
+            As a recent Software Engineering graduate, I am highly motivated to learn, grow, and contribute my skills to meaningful projects while gaining hands-on experience in a professional environment.
           </p>
 
           <div className="flex flex-col gap-2">
